@@ -20,108 +20,155 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
-        <header>
-          <h1 id="logo">Unplugged</h1>
+        <header class="main-header">
+          <h1 id="logo">
+            <a href="index.html"><img src="img/logo.png" alt="Unplugged" /></a>
+          </h1>
           <nav>
             <ul>
               <li><img src="#"/><a href="#">Concerts</a></li>
               <li><img src="#"/><a href="#">Reviews</a></li>
               <li><img src="#"/><a href="#">About Us</a></li>
-                <ul>
-                  <li><img src="#"/><a href="#">FAQ</a></li>
-                  <li><img src="#"/><a href="#">Who We Are & Contact</a></li>
-                </ul>
+              <li><img src="#"/><a href="#">FAQ</a></li>
             </ul>
           </nav>
         </header>
 
         <main>
-          <div class="hero-area">
-            <div class="top-img"><img src="#" alt="top review photo"/>
-            </div>
-            <div class="top-story">
-              <h2> Wilco Announces a New Album and a Summer Tour</h2>
-              <p> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi udolor in reprehenderit in voluptate velit esse cillu"</p>
-            </div>
-          </div>
+          <section class="hero-area">
+            <article class="top-story">
+              <figure class="top-img">
+                <a href="reviews/reviews-detail.html"><img src="#" alt="top review photo" /></a>
+              </figure>
+              <div class="top-info">
+                <header>
+                  <h2> Wilco Announces a New Album and a Summer Tour</h2>
+                </header>
+                <p> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi udolor in reprehenderit in voluptate velit esse cillu"</p>
+              </div>
+          </article>
 
-          <aside>
+
+          <!---SIDEBAR--->
+
+          <aside class="sidebar">
             <div class="newsletter">
+              <h3>Newsletter Signup</h3>
               <form class="signup">
-                <h3>Newsletter Signup</h3><br>
                 <input class="signup-form" type="text" name="newsletter" value="">
                 <input class="signup-btn" type="submit" value="Sign Up">
               </form>
-            </div>
-            <div class="sidebar-upcoming">
+            </div> <!--Newsletter-->
+
+            <!--Hide on mobile-->
+
+            <div class="upcoming">
               <h3>Upcoming Concerts</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
-              <button class="upcoming-btn" type="button"><img src="#"/>See All</button>
-            </div>
-            <div class="sidebar-faq">
+              <a href="#" class="btn">See All</a>
+            </div><!--Upcoming-->
+
+
+            <!--Hide on mobile-->
+
+            <div class="faq">
               <h3>Frequently Asked Questions</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
-              <button class="faq-btn" type="button"><img src="#"/>See All</button>
-            </div>
+              <a href="#" class="btn">See All</a>
+            </div> <!--FAQ-->
           </aside>
+        </section><!--Hero Area-->
 
-          <div class="feed">
+        <!--FEED SECTION-->
+
+
+          <section class="feed">
             <h3> Recent News & Reviews </h3>
-            <div class="feed-type">
-              <p> News </p>
-            </div>
-            <div class="feed-image"><img src="#"/></div>
-            <div class="feed-item">
-              <h3> Arcade Fire Drops Hints About a New Side Project in a Recent Interview - What Will It Be?</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
-            </div>
-            <hr>
-            <div class="feed-type">
-              <p> News </p>
-            <div class="feed-image"><img src="#"/></div>
-            <div class="feed-item">
-              <h3> Our Roundup of 2015's Top Summer Festivals & Free Shows</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
-            </div>
-            <hr>
-            <div class="feed-type">
-              <p> Review </p>
-            <div class="feed-image"><img src="#"/></div>
-            <div class="feed-item">
-              <h3> Laura Marling and Johnny Flynn Are Teaming Up Again - Will it be an Album or a Single?</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
-            </div>
-            <hr>
-            <div class="feed-type">
-              <p> Review </p>
-            <div class="feed-image"><img src="#"/></div>
-            <div class="feed-item">
-              <h3> Mumford & Sons New Album "Wilder Mind" - Oh yes! or Oh NO!?</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
-            </div>
-            <hr>
-            <div class="feed-type">
-              <p> News </p>
-            <div class="feed-image"><img src="#"/></div>
-            <div class="feed-item">
-              <h3> Jose Gonzalez's New Album "Vestiages & Claws" - Hit or Miss?</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
-            </div>
-            <hr>
-            <div class="feed-type">
-              <p> Review </p>
-            <div class="feed-image"><img src="#"/></div>
-            <div class="feed-item">
-              <h3> The National Surprises Us With a New Single - Will a New Album follow?</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
-            </div>
 
-          </div>
+            <article class="feed-item">
+              <h3 class="feed-type">News</h3>
+              <figure class="feed-image">
+                <a href="news/news-detail.html"><img src="#" alt="Arcade Fire" /></a>
+              </figure>
+              <div class="feed-info">
+                <h3><a href="news/news-detail.html"> Arcade Fire Drops Hints About a New Side Project in a Recent Interview - What Will It Be?</a></h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+              </div>
+            </article>
+
+            <hr>
+
+            <article class="feed-item">
+              <h3 class="feed-type">News</h3>
+              <figure class="feed-image">
+                <a href="news/news-detail.html"><img src="#" alt="festivals"/></a>
+              </figure>
+              <div class="feed-info">
+                <h3><a href="news/news-detail.html">Our Roundup of 2015's Top Summer Festivals & Free Shows</a><h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+              </div>
+            </article>
+
+            <hr>
+
+            <article class="feed-item">
+              <h3 class="feed-type">Review</h3>
+              <figure class="feed-image">
+                <a href="news/news-detail.html"><img src="#" alt="Laura Marling"/></a>
+              </figure>
+              <div class="feed-info">
+                <h3><a href="news/news-detail.html">Laura Marling and Johnny Flynn Are Teaming Up Again - Will it be an Album or a Single?</a></h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+              </div>
+            </article>
+
+            <hr>
+
+            <article class="feed-item">
+              <h3 class="feed-type">Review</h3>
+              <figure class="feed-image">
+                <a href="reviews/reviews-detail.html"><img src="#" alt="Mumford and Sons"/></a>
+              </figure>
+              <div class="feed-info">
+                <h3><a href="reviews/reviews-detail.html">Mumford & Sons New Album "Wilder Mind" - Oh yes! or Oh NO!?</a></h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+              </div>
+            </article>
+
+            <hr>
+
+            <article class="feed-item">
+              <h3 class="feed-type">Review</h3>
+              <figure class="feed-image">
+                <a href="reviews/reviews-detail.html"><img src="#" alt="Jose Gonzalez"/></a>
+              </figure>
+              <div class="feed-info">
+                <h3><a href="reviews/reviews-detail.html">Jose Gonzalez's New Album "Vestiages & Claws" - Hit or Miss?</a></h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+              </div>
+            </article>
+
+            <hr>
+
+            <article class="feed-item">
+              <h3 class="feed-type">Review</h3>
+              <figure class="feed-image">
+                <a href="news/news-detail.html"><img src="#" alt="Laura Marling"/></a>
+              </figure>
+              <div class="feed-info">
+                <h3><a href="news/news-detail.html">The National Surprises Us With a New Single - Will a New Album follow?</a></h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+              </div>
+            </article>
+
+          </section><!--Feed-->
         </main> <!--main wrapper-->
 
         <footer>
           <hr>
-          <div class="footer-logo"><img src="#" alt="unplugged"/><div>
+          <div id="footer-logo">
+            <img src="#" alt="footer logo unplugged"/>
+          </div>
         </footer>
 
 

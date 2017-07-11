@@ -95,7 +95,7 @@ textarea {
    Author's custom styles
    ========================================================================== */
 /*****HEADER*******/
-header {
+.main-header {
   width: 100%;
 }
 
@@ -118,27 +118,20 @@ nav ul {
 main {
   width: 96%;
   padding: 0, 2%;
-    margin: auto;
-
 }
 
-#main-content {
-  width: 96%;
-  padding: 0, 2%;
-}
+/* HOME PAGE & REVIEWS PAGE **********/
 
-.hero-area {
-  width: 96%;
-}
+/* Featured News Item =========================== */
 
 .top-img {
   width: 96%;
-  padding: 0, 2%;
+  /*padding: 0, 2%;*/
 }
 
 .top-story {
   width: 96%;
-  padding: 0, 2%;
+  /*padding: 0, 2%;*/
 }
 
 
@@ -148,15 +141,18 @@ main {
 
 .sidebar {
   width: 100%;
-  padding: 0;
 }
 
-.newsletter {
+.upcoming, .faq {
+  display: none;
+}
+
+/*.newsletter {
   width: 100%;
   padding: 0;
 }
 
-.signup{
+.signup {
   width: 100%;
   padding: 0;
 }
@@ -169,22 +165,23 @@ main {
   width: 100%;
 }
 
-.sidebar-upcoming {
+.upcoming {
   width: 100%;
+  padding: 0;
 }
 
 .upcoming-btn {
   width: 100%;
 }
 
-.sidebar-faq {
+.faq {
   width: 100%;
 }
 
 .faq-btn {
   width: 100%;
 }
-
+*/
 
 
 /*****FEED*******/
@@ -192,7 +189,10 @@ main {
 
 .feed {
   width: 100%;
-  padding: 0;
+}
+
+.feed p {
+  display: none;
 }
 
 .feed-type {
@@ -308,7 +308,32 @@ footer {
  @media screen and (min-width: 768px) {
    /*Tablet styles here*/
 
-/***MAIN***/
+/****HEADER****/
+  .main-header {
+    width: 94%;
+  }
+
+  #logo {
+    width: 40%;
+    float: left;
+  }
+
+  nav {
+    width: 60%;
+    float: right;
+    margin-top: 3%;
+  }
+
+  nav ul {
+    display: inline;
+  }
+
+  nav li {
+    display: inline;
+  }
+
+
+/***FEATURED NEWS ITEM***/
 
    main {
      width: 96%;
@@ -316,75 +341,99 @@ footer {
    }
 
    .hero-area {
-     width: 96%;
-     padding: 0 2%;
+     width: 100%;
+     clear: both;
+     /*padding: 0 2%;*/
    }
 
    .top-img {
-     width: 55%;
-     padding: 0 2.5%;
+     width: 57%;
+     float: left;
+     /*padding: 0 2.5%;*/
    }
 
    .top-story {
-     width: 35%;
-     padding: 0 2.5%;
+     width: 37%;
+     float: left;
+     /*padding: 0 2.5%;*/
    }
 
 
 /****SIDEBAR****/
 
-.newsletter {
-  width: 35%;
-  padding: 0 2.5%;
-}
+  .sidebar {
+    clear: both;
+    width: 37%;
+    float: right;
+  }
 
-.signup {
-  width: 35%;
-  padding: 0 2.5%;
-}
+  .upcoming, .faq, .newsletter {
+    display: block;
+  }
 
-.signup-form {
-  width: 100%;
-}
+  /*.newsletter {
+    width: 35%;
+    padding: 0 2.5%;
+  }
 
-.signup-btn {
-  width: 100%;
-}
+/*Fix the float*/
+  /*.signup {
+    width: 35%;
+    padding: 0 2.5%;
+  }
 
-.sidebar-upcoming {
-  width: 35%;
-  padding: 0 2.5%;
-}
+  .signup-form {
+    width: 100%;
+  }
 
-.upcoming-btn {
-  width: 100%;
-}
+  .signup-btn {
+    width: 100%;
+  }
 
-.sidebar-faq {
-  width: 35%;
-  padding: 0 2.5%;
-}
+  .upcoming {
+    width: 35%;
+    padding: 0 2.5%;
+  }
 
-.faq-btn {
-  width: 100%;
-}
+  .upcoming-btn {
+    width: 100%;
+  }
+
+  .faq {
+    width: 35%;
+    padding: 0 2.5%;
+  }
+
+  .faq-btn {
+    width: 100%;
+  }*/
 
 /****FEED****/
 
-.feed {
-  width: 55%;
-  padding: 0 2.5%;
-}
+  .feed {
+    width: 60%;
+    float: left;
+    /*padding: 0 2.5%;*/
+  }
 
-.feed-image {
-  width: 31.5%;
-  margin-right: 1.5%;
-}
+  .feed-image {
+    width: 35%;
+    /*margin-right: 1.5%;*/
+  }
 
-.feed-item {
-  width: 64.5%;
-  margin: 0 1.5%;
-}
+  .feed-item {
+    width: 37.5%;
+    margin: 0 1.5%;
+  }
+
+  footer {
+    width: 100%;
+  }
+
+  #footer-logo {
+    width: 30%;
+    margin: auto;
+  }
 
 }
 @media screen and (min-width: 940px){
@@ -439,9 +488,9 @@ footer {
     width: 100%;
   }
 
-  .feed-type {
-    width: 12%; /*needed?*/
-  }
+  /*.feed-type {
+    width: 12%; /*needed?
+  }*/
 
   .feed-image {
     width: 16.67%;

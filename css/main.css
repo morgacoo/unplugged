@@ -94,18 +94,132 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+/*****HEADER*******/
+header {
+  width: 100%;
+}
+
+#logo{
+  width: 30%;
+
+}
+
+nav {
+  width: 100%;
+}
+
+nav ul {
+
+}
+
+
+
+/*****MAIN*******/
+main {
+  width: 96%;
+  padding: 0, 2%;
+    margin: auto;
+
+}
+
+#main-content {
+  width: 96%;
+  padding: 0, 2%;
+}
+
+.hero-area {
+  width: 96%;
+}
+
+.top-img {
+  width: 96%;
+  padding: 0, 2%;
+}
+
+.top-story {
+  width: 96%;
+  padding: 0, 2%;
+}
 
 
 
 
+/*****ASIDE*******/
+
+.sidebar {
+  width: 100%;
+  padding: 0;
+}
+
+.newsletter {
+  width: 100%;
+  padding: 0;
+}
+
+.signup{
+  width: 100%;
+  padding: 0;
+}
+
+.signup-form {
+  width: 99.4%;
+}
+
+.signup-btn {
+  width: 100%;
+}
+
+.sidebar-upcoming {
+
+}
+
+.upcoming-btn {
+  width: 100%;
+}
+
+.sidebar-faq {
+
+}
+
+.faq-btn {
+  width: 100%;
+}
 
 
 
+/*****FEED*******/
 
 
+.feed {
+  width: 100%;
+  padding: 0;
+}
+
+.feed-type {
+
+}
+
+.feed-image {
+  width: 50%;
+  margin: auto;
+}
+
+.feed-item {
+  width: 100%;
+  padding: 0;
+}
 
 
+/*****FOOTER*******/
+footer {
+  width: 100%;
+  margin: auto;
+}
 
+#footer-logo {
+  width: 47.5%;
+  margin: auto;
+}
 
 
 
@@ -191,15 +305,128 @@ textarea {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
+ @media screen and (min-width: 768px) {
+   /*Tablet styles here*/
+
+/***MAIN***/
+
+   main {
+     width: 96%;
+     padding: 2%;
+   }
+
+   .hero-area {
+     width: 96%;
+     padding: 0 2%;
+   }
+
+   .top-img {
+     width: 55%;
+     padding: 0 2.5%;
+   }
+
+   .top-story {
+     width: 35%;
+     padding: 0 2.5%;
+   }
+
+
+/****SIDEBAR****/
+
+.newsletter {
+  width: 35%;
+  padding: 0 2.5%;
 }
 
-@media print,
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 1.25dppx),
-       (min-resolution: 120dpi) {
-    /* Style adjustments for high resolution devices */
+.signup {
+  width: 35%;
+  padding: 0 2.5%;
+}
+
+.signup-form {
+  width: 100%;
+}
+
+.signup-btn {
+  width: 100%;
+}
+
+.sidebar-upcoming {
+  width: 35%;
+  padding: 0 2.5%;
+}
+
+.upcoming-btn {
+  width: 100%;
+}
+
+.sidebar-faq {
+  width: 35%;
+  padding: 0 2.5%;
+}
+
+.faq-btn {
+  width: 100%;
+}
+
+/****FEED****/
+
+.feed {
+  width: 55%;
+  padding: 0 2.5%;
+}
+
+.feed-image {
+  width: 31.5%;
+  margin-right: 1.5%;
+}
+
+.feed-item {
+  width: 64.5%;
+  margin: 0 1.5%;
+}
+
+}
+@media screen and (min-width: 940px){
+  /*Desktop styles here*/
+  body {
+
+  }
+
+  main {
+
+  }
+
+  .sidebar {
+    width: 31%;
+    padding: 0, 1%;
+  }
+
+  .newsletter {
+    width: 30%;
+    padding: 0, 1%;
+  }
+
+  .signup-btn {
+    width: 100%;
+    padding: 0, 1%
+  }
+
+  .sidebar-upcoming{
+    width: 30%;
+    padding: 0, 1%;
+  }
+
+  .sidebar-faq {
+    width: 30%;
+    padding: 0, 1%;
+  }
+
+  .signup {
+    width: 30%;
+    padding: 0, 1%;
+  }
+
 }
 
 /* ==========================================================================

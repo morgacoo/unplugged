@@ -170,7 +170,7 @@ main {
 }
 
 .sidebar-upcoming {
-
+  width: 100%;
 }
 
 .upcoming-btn {
@@ -178,7 +178,7 @@ main {
 }
 
 .sidebar-faq {
-
+  width: 100%;
 }
 
 .faq-btn {
@@ -389,27 +389,73 @@ footer {
 }
 @media screen and (min-width: 940px){
   /*Desktop styles here*/
-  body {
 
-  }
 
   main {
-
+    width: 96%;
+    padding: 0 2%;
   }
+
+
+/*****SIDEBAR****/
 
   .sidebar {
     width: 31%;
     padding: 0, 1%;
+    margin-left: 1%;
   }
 
   .newsletter {
     width: 30%;
-    padding: 0, 1%;
+    padding: 0 1%;
   }
+
+  .signup { /*newsletter signup*/
+    width: 100%;
+    padding: 0 0;
+  }
+
+  .signup-form {
+    width: 98%;
+  }
+
+  .sidebar-upcoming {
+    width: 30%;
+    padding: 0 1%;
+  }
+
+  .upcoming-btn {
+    width: 100%;
+  }
+
+  .sidebar-faq {
+    width: 30%;
+    padding: 0 1%;
+  }
+
+/***FEED****/
+
+  .feed {
+    width: 100%;
+  }
+
+  .feed-type {
+    width: 12%; /*needed?*/
+  }
+
+  .feed-image {
+    width: 16.67%;
+  }
+
+  .feed-item {
+    width: 67%;
+  }
+}
+
 
   .signup-btn {
     width: 100%;
-    padding: 0, 1%
+    padding: 0, 0;
   }
 
   .sidebar-upcoming{
@@ -422,10 +468,7 @@ footer {
     padding: 0, 1%;
   }
 
-  .signup {
-    width: 30%;
-    padding: 0, 1%;
-  }
+
 
 }
 

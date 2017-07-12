@@ -122,7 +122,7 @@ a {
 
 p{
   font-size: 1em;
-  line-height: 1.4em;
+  line-height: 1.4;
 }
 
 h1, h2, h3, h4 {
@@ -132,7 +132,7 @@ h1, h2, h3, h4 {
 h1{
   /*font-family: 'Sansita', sans-serif;*/
   font-size: 1.33em;
-  font-weight: 900;
+  line-height: 1.6;
 }
 
 h2{
@@ -145,9 +145,6 @@ h3{
   font-size: 1em;
 }
 
-h4{
-
-}
 
 .btn {
   background-color: #ff1256;
@@ -155,16 +152,17 @@ h4{
   color: #fff;
   font-weight: bold;
   text-transform: uppercase;
-  line: 1.6rem;
+  line-height: 2.5em;
   text-align: center;
   box-shadow: 2px 2px 0px #DADADA;
-  width: 94%;
-  margin-left: 0%;
+  height: 2.5em;
+  width:100%;
+  display: block;
 }
 
-.btn:hover {
-  background-color: #b21;
-}
+    .btn:hover {
+      background-color: #b21e49;
+    }
 
 .sidebar-upcoming .btn{
   background-color: #b21e49;
@@ -174,13 +172,20 @@ h4{
   background-color: #b21e49;
 }
 
+input.btn{
+    background-color: #ff1256;
+}
+    input.btn:hover{
+        background-color: #b21e49;
+    }/*WHAT DO THESE INPUTS DO?****/
+
 /*****HEADER*******/
 .main-header {
   width: 100%;
 }
 
 #logo{
-  width: 30%;
+  width: 100%;
 
 }
 
@@ -195,12 +200,18 @@ nav ul {
   text-align: center;
 }
 
+      nav ul li a {
+        font-size: 1.125em;
+        text-transform: uppercase;
+        color: #333;
+      }
 
 
 /*****MAIN*******/
 main {
   width: 96%;
   background-color: #eeeeee;
+  padding: 0 2%;
 }
 
 /* HOME PAGE & REVIEWS PAGE **********/
@@ -212,12 +223,12 @@ main {
 }
 
 .top-img {
-  width: 96%;
+  width: 100%;
   /*padding: 0, 2%;*/
 }
 
 .top-story {
-  width: 96%;
+  width: 100%;
   /*padding: 0, 2%;*/
 }
 
@@ -235,11 +246,6 @@ main {
   display: none;
   padding: 0 2%;
 }
-
-.newsletter {
-  padding: 0 2%;
-}
-
 
 /*.newsletter {
   width: 100%;
@@ -286,30 +292,47 @@ main {
 }
 
 /*Don't show on mobile*/
-.feed p {
-  display: none;
-  padding: 0 2%;
+    .feed p {
+      display: none;
+      padding: 0 2%;
+    }
+
+    .feed h2 {
+      padding: 0 2%;
+    }
+
+.feed-item {
+  clear: both;
 }
 
-.feed h2 {
-  padding: 0 2%;
-}
+    .feed-type {
+      text-transform: uppercase;
+      font-size: 0.85em;
+    }
 
-.feed-type {
-  font-weight: 900;
-  padding: 0 1%;
+    .feed-item h3 a {
+      color: #222;
+    }
+
+    .feed-item h3 a:hover {
+      color:#23a4cc
+    }
+
+.feed-info {
+  float: left;
+  width: 42%;
 }
 
 .feed-image {
-  width: 50%;
-  margin: auto;
-  padding: 0 2%;
+  width: 45%;
+  float: left;
 }
 
-.feed-item {
+/****DETAILED PAGES***/
+.reviews-img, .news-img {
   width: 100%;
-  padding: 0 2%;
 }
+
 
 
 /*****FOOTER*******/
@@ -413,6 +436,8 @@ footer {
 /****HEADER****/
   .main-header {
     width: 94%;
+    max-width: 940px;
+    color: #ddd;
   }
 
   #logo {
@@ -426,9 +451,9 @@ footer {
     /*margin-top: 3%;*/
   }
 
-nav li {
-    display: inline;
-  }
+  nav li {
+      display: inline;
+    }
 
 
 /***FEATURED NEWS ITEM***/
@@ -448,6 +473,10 @@ nav li {
      float: right;
    }
 
+   header h1 {
+     font-weight:900;
+   }
+
 
 /****SIDEBAR****/
 
@@ -455,6 +484,7 @@ nav li {
     clear: both;
     width: 37%;
     float: right;
+    border-top: 1px solid grey;
   }
 
   .sidebar-upcoming,
@@ -468,13 +498,27 @@ nav li {
   .feed {
     width: 60%;
     float: left;
+    padding-left: 2%;
+    border-top: 1px solid grey;
     border-right: 1px solid grey;
   }
 
+      .feed h2 {
+        padding-left: 0;
+      }
   .feed-img {
     width: 35%;
+    float: left;
   }
 
+  .feed-info{
+    width: 57%;
+    float: left;
+  }
+
+  .feed-item {
+
+  }
 
 /*****DETAILS PAGES******/
 

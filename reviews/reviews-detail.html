@@ -20,25 +20,25 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
-        <header>
-          <h1 id="logo">Unplugged</h1>
+        <header class="main-header">
+          <h1 id="logo">
+            <a href="index.html"><img src="img/logo.png" alt="Unplugged" /></a>
+          </h1>
           <nav>
             <ul>
-              <li><img src="#"/><a href="#">Concerts</a></li>
-              <li><img src="#"/><a href="#">Reviews</a></li>
-              <li><img src="#"/><a href="#">About Us</a></li>
-                <ul>
-                  <li><img src="#"/><a href="#">FAQ</a></li>
-                  <li><img src="#"/><a href="#">Who We Are & Contact</a></li>
-                </ul>
+              <li><img src="#"/><a href="concerts/index.html">Concerts</a></li>
+              <li><img src="#"/><a href="reviews/index.html">Reviews</a></li>
+              <li><img src="#"/><a href="about/index.html">About Us</a></li>
+              <li><img src="#"/><a href="about/faq.html">FAQ</a></li>
             </ul>
           </nav>
         </header>
 
         <main>
-          <div class="hero-area">
-            <div class="top-img"><img src="#" alt="top review photo"/>
-            </div>
+          <section class="hero-area">
+            <figure class="top-img">
+              <img src="#" alt="top review photo"/>
+            </figure>
             <div class="top-story">
               <h1> Beirut's New Album - Their Best Album Yet</h1>
               <p> Author Name | June 09, 2015 </p>
@@ -48,25 +48,28 @@
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit</p>
               <p>amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio.</p>
             </div>
-          </div>
 
-          <aside>
-            <div class="newsletter">
-              <form class="signup">
-                <h3> Newsletter Signup </h3>
-                <input class="signup-form" type="text" name="newsletter" value="">
-                <input class="signupbtn" type="submit" value="Sign Up">
-              </form>
-            </div>
-          </aside>
+<!--SIDEBAR-->
 
 
+            <aside class="sidebar">
+              <div class="newsletter">
+                <h2> Newsletter Signup </h2>
+                <form>
+                  <input type="text">
+                  <input type="submit" class="btn" value="Sign Up">
+                </form>
+              </div>
+            </aside>
+          </section><!--Hero Area-->
 
-        </main>
+        </main><!--Main Wrapper-->
 
         <footer>
           <hr>
-          <div class="footer-logo"><img src="#" alt="unplugged" /></div>
+          <div id="footer-logo">
+            <img src="#" alt="footer logo unplugged" />
+          </div>
         </footer>
 
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>

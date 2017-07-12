@@ -94,6 +94,86 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+/***Global Styles***/
+
+/* Color
+Dark Pink (Magenta): #b21e49;
+Light Grey: #eeeeee;
+Bright Pink: #ff1256;
+Dark Grey: #222222;
+Blue: #23a4cc
+*/
+
+
+
+body, html {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+  color: #222;
+  background-color: #eee;
+}
+
+a {
+  font-weight: 700;
+  color: #23a4cc;
+  text-decoration: none;
+
+}
+
+p{
+  font-size: 1em;
+  line-height: 1.4em;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 700;
+}
+
+h1{
+  /*font-family: 'Sansita', sans-serif;*/
+  font-size: 1.33em;
+  font-weight: 900;
+}
+
+h2{
+  text-transform: uppercase;
+  font-size: 1em;
+
+}
+
+h3{
+  font-size: 1em;
+}
+
+h4{
+
+}
+
+.btn {
+  background-color: #ff1256;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  line: 1.6rem;
+  text-align: center;
+  box-shadow: 2px 2px 0px #DADADA;
+  width: 94%;
+  margin-left: 0%;
+}
+
+.btn:hover {
+  background-color: #b21;
+}
+
+.sidebar-upcoming .btn{
+  background-color: #b21e49;
+}
+
+.sidebar-faq .btn {
+  background-color: #b21e49;
+}
+
 /*****HEADER*******/
 .main-header {
   width: 100%;
@@ -106,10 +186,13 @@ textarea {
 
 nav {
   width: 100%;
+  background-color: #dddddd;
+
 }
 
 nav ul {
-
+  display: inline;
+  text-align: center;
 }
 
 
@@ -117,12 +200,16 @@ nav ul {
 /*****MAIN*******/
 main {
   width: 96%;
-  padding: 0, 2%;
+  background-color: #eeeeee;
 }
 
 /* HOME PAGE & REVIEWS PAGE **********/
 
 /* Featured News Item =========================== */
+
+.hero-area {
+  padding: 0 2%;
+}
 
 .top-img {
   width: 96%;
@@ -141,11 +228,18 @@ main {
 
 .sidebar {
   width: 100%;
+
 }
 
-.upcoming, .faq {
+.sidebar-upcoming, .sidebar-faq {
   display: none;
+  padding: 0 2%;
 }
+
+.newsletter {
+  padding: 0 2%;
+}
+
 
 /*.newsletter {
   width: 100%;
@@ -194,19 +288,27 @@ main {
 /*Don't show on mobile*/
 .feed p {
   display: none;
+  padding: 0 2%;
+}
+
+.feed h2 {
+  padding: 0 2%;
 }
 
 .feed-type {
-
+  font-weight: 900;
+  padding: 0 1%;
 }
 
 .feed-image {
   width: 50%;
   margin: auto;
+  padding: 0 2%;
 }
 
 .feed-item {
   width: 100%;
+  padding: 0 2%;
 }
 
 

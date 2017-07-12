@@ -355,46 +355,11 @@ nav li {
     float: right;
   }
 
-  .upcoming, .faq {
+  .sidebar-upcoming,
+  .sidebar-faq {
     display: block;
   }
 
-  /*.newsletter {
-    width: 35%;
-    padding: 0 2.5%;
-  }
-
-/*Fix the float*/
-  /*.signup {
-    width: 35%;
-    padding: 0 2.5%;
-  }
-
-  .signup-form {
-    width: 100%;
-  }
-
-  .signup-btn {
-    width: 100%;
-  }
-
-  .upcoming {
-    width: 35%;
-    padding: 0 2.5%;
-  }
-
-  .upcoming-btn {
-    width: 100%;
-  }
-
-  .faq {
-    width: 35%;
-    padding: 0 2.5%;
-  }
-
-  .faq-btn {
-    width: 100%;
-  }*/
 
 /****FEED****/
 
@@ -404,9 +369,34 @@ nav li {
     border-right: 1px solid grey;
   }
 
-  .feed-image {
+  .feed-img {
     width: 35%;
-    float: left;
+  }
+
+
+/*****DETAILS PAGES******/
+
+  .reviews-img, .news-img {
+    width: 50%;
+    margin: 0px;
+    float; left;
+  }
+
+  .detail-title {
+    width: 50%;
+    float: right;
+  }
+
+  aside.detail {
+    width: 100%;
+  }
+
+    .detail .newsletter h2{
+      display: inline;
+    }
+
+    .detail .newsletter input {
+      display: inline;
   }
 
 
@@ -420,7 +410,7 @@ nav li {
   #footer-logo {
     width: 30%;
     margin: auto;
-    clear: auto;
+
   }
 
 }
@@ -438,24 +428,25 @@ nav li {
   }
 
   .hero-area {
-    width: 57%;
-    float: left;
+    width: 100%;
   }
 
   .top-img {
     float: left;
+    width: 57%;
   }
 
   .top-info {
     float: left;
+    width: 57%;
   }
 
 /*****SIDEBAR****/
 
   .sidebar {
-    width: 31%;
+    width: 33%;
     padding: 0, 1%;
-    margin-left: 1%;
+    float: right;
   }
 
   .newsletter {

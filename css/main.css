@@ -222,6 +222,7 @@ main {
 
 .hero-area {
   padding: 0 2%;
+
 }
 
 .top-img {
@@ -241,7 +242,7 @@ main {
 
 .sidebar {
   width: 100%;
-
+  padding-bottom: 5%;
 }
 
 .sidebar-upcoming, .sidebar-faq {
@@ -249,12 +250,27 @@ main {
   padding: 0 2%;
 }
 
+#text-field {
+  margin-bottom: 3%;
+}
+
+.newsletter {
+  width: 100%;
+}
+
+.newsletter .btn {
+  margin-top: 3%;
+  margin-right: auto;
+  margin-left: auto;
+}
 
 /*****FEED*******/
 
 
 .feed {
   width: 100%;
+  border-top: 1px solid #bfbfbf;
+  padding-top: 2%;
 }
 
 /*Don't show on mobile*/
@@ -264,16 +280,18 @@ main {
     }
 
     .feed h2 {
-      padding: 0 0%;
+      margin-top: 1%;
     }
 
 .feed-item {
   clear: both;
+  width: 100%;
 }
 
     .feed-type {
       text-transform: uppercase;
       font-size: 0.85em;
+      margin-left: 2%;
     }
 
     .feed-item h3 a {
@@ -284,20 +302,29 @@ main {
       color:#23a4cc
     }
 
+.feed-img {
+  width: 40%;
+  float: left;
+  margin-left: 3%;
+  margin-right: 3%;
+  border: 2px solid #bfbfbf;
+}
+
+
 .feed-info {
   float: left;
-  width: 42%;
-  margin-left: 0%;
+  width: 43%;
+  margin-left: 3%;
+  padding-right: 0;
 }
 
-.feed-image {
-  width: 45%;
-  float: left;
-  padding-left: 2%;
-}
 
 .feed-border {
-  border-bottom: 1px solid #eeeeee;
+  border-bottom: 1px solid #bfbfbf;
+}
+
+.clearfix {
+  overflow: auto;
 }
 
 /****DETAILED PAGES***/
@@ -311,6 +338,7 @@ main {
 footer {
   width: 100%;
   margin: auto;
+  clear:both;
 }
 
 #footer-logo {

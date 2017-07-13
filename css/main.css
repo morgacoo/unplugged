@@ -435,7 +435,7 @@ footer {
 
 /****HEADER****/
   .main-header {
-    width: 94%;
+    width: 100%;
     max-width: 940px;
     color: #ddd;
   }
@@ -443,11 +443,11 @@ footer {
   #logo {
     width: 40%;
     float: left;
+    padding-left: 2%;
   }
 
   nav {
-    width: 60%;
-    float: right;
+    width: 100%;
     /*margin-top: 3%;*/
   }
 
@@ -463,7 +463,7 @@ footer {
    }
 
    .top-img {
-     width: 57%;
+     width: 55%;
      float: right;
      padding-right: 3%;
    }
@@ -482,7 +482,7 @@ footer {
 
   .sidebar {
     clear: both;
-    width: 37%;
+    width: 40%;
     float: right;
     border-top: 1px solid grey;
   }
@@ -492,11 +492,15 @@ footer {
     display: block;
   }
 
+    .sidebar-faq, .sidebar-upcoming h3, p, a {
+      width: 100% !important;
+    }
+
 
 /****FEED****/
 
   .feed {
-    width: 60%;
+    width: 57%;
     float: left;
     padding-left: 2%;
     border-top: 1px solid grey;
@@ -509,15 +513,22 @@ footer {
   .feed-img {
     width: 35%;
     float: left;
+    margin-left: 0;
   }
 
   .feed-info{
     width: 57%;
     float: left;
+    margin-right: 2%;
+    margin-left: 1%;
   }
 
   .feed-item {
 
+  }
+
+  .feed-type {
+    margin-left: 0;
   }
 
 /*****DETAILS PAGES******/
@@ -551,6 +562,7 @@ footer {
   footer {
     width: 100%;
     clear: both;
+    padding-top: 10%;
   }
 
   #footer-logo {

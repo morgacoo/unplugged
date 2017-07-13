@@ -136,7 +136,6 @@ h1{
 }
 
 h2{
-  text-transform: uppercase;
   font-size: 1em;
 
 }
@@ -182,16 +181,19 @@ input.btn{
 /*****HEADER*******/
 .main-header {
   width: 100%;
+  padding-right: 0;
 }
 
 #logo{
   width: 100%;
-
+  padding-bottom: 0;
 }
 
 nav {
-  width: 100%;
+  width: cover;
+  margin-right: -2%;
   background-color: #dddddd;
+  text-align: center;
 
 }
 
@@ -247,42 +249,6 @@ main {
   padding: 0 2%;
 }
 
-/*.newsletter {
-  width: 100%;
-  padding: 0;
-}
-
-.signup {
-  width: 100%;
-  padding: 0;
-}
-
-.signup-form {
-  width: 99.4%;
-}
-
-.signup-btn {
-  width: 100%;
-}
-
-.upcoming {
-  width: 100%;
-  padding: 0;
-}
-
-.upcoming-btn {
-  width: 100%;
-}
-
-.faq {
-  width: 100%;
-}
-
-.faq-btn {
-  width: 100%;
-}
-*/
-
 
 /*****FEED*******/
 
@@ -298,7 +264,7 @@ main {
     }
 
     .feed h2 {
-      padding: 0 2%;
+      padding: 0 0%;
     }
 
 .feed-item {
@@ -321,11 +287,17 @@ main {
 .feed-info {
   float: left;
   width: 42%;
+  margin-left: 0%;
 }
 
 .feed-image {
   width: 45%;
   float: left;
+  padding-left: 2%;
+}
+
+.feed-border {
+  border-bottom: 1px solid #eeeeee;
 }
 
 /****DETAILED PAGES***/

@@ -489,12 +489,13 @@ footer {
     width: 40%;
     float: right;
     border-top: 1px solid #bfbfbf;
-    border-bottom: 1px solid #bfbfbf;
   }
 
-  .clearfix {
-    overflow: auto;
-  }
+  /*.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }*/
 
   .sidebar h2 {
     font-size: 1.25em;
@@ -507,7 +508,8 @@ footer {
   .sidebar-upcoming,
   .sidebar-faq {
     display: block;
-    border-top: 1px solid #bfbfbf;
+    border-bottom: 1px solid #bfbfbf;
+    padding-bottom: 6%;
   }
 
     .sidebar-faq, .sidebar-upcoming h2, p, a {
@@ -515,8 +517,10 @@ footer {
     }
 
     .newsletter {
-      border-bottom: 1px solid #bfbfbf;
+      /*border-bottom: 1px solid #bfbfbf;*/
       padding-left: 2%;
+      padding-bottom: 6%;
+      border-bottom: 1px solid #bfbfbf;
     }
 
 /****FEED****/

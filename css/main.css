@@ -438,21 +438,24 @@ footer {
     width: 100%;
     max-width: 940px;
     color: #ddd;
+    margin-left:4%;
   }
 
   #logo {
     width: 40%;
     float: left;
-    padding-left: 2%;
+    margin-left: 2%;
   }
 
   nav {
     width: 100%;
+    padding-right: 10%;
     /*margin-top: 3%;*/
   }
 
   nav li {
       display: inline;
+      margin-right: 2%;
     }
 
 
@@ -615,7 +618,6 @@ footer {
     width: 1400px;
     min-width: 940px;
     background-color: #dddddd;
-
   }
 
   nav ul {
@@ -634,19 +636,22 @@ footer {
   }
 
   .hero-area {
-    width: 60%;
+    width: 100%;
     clear: both;
   }
 
   .top-img {
     float: left;
-    width: 57%;
+    width: 50%;
     margin-right: 0%;
+    clear: both;
+    margin-left: 0;
   }
 
   .top-info {
     float: left;
-    width: 57%;
+    width: 50%;
+    clear: both;
   }
 
   header h1 {
@@ -664,6 +669,7 @@ footer {
     border-top: 1px solid #eee; /*Made border same color as background color to hide*/
     margin-right: 2%;
     margin-left: 0;
+    clear: both;
   }
 
   #text-field {
@@ -703,6 +709,7 @@ footer {
   .feed {
     width: 100%;
     border-right: 1px solid #eee;/*Made same color as background color to hide*/
+    margin-left: 0%;
   }
 
   /*.feed-type {
@@ -711,6 +718,7 @@ footer {
 
   .feed-image {
     width: 16.67%;
+    margin-right: 0%;
   }
 
   .feed-item {
@@ -732,8 +740,17 @@ footer {
     padding: 0, 1%;
   }
 
+  .feed-info h3 {
+    font-size: 1.25em;
+    font-weight: bold;
+  }
+
   .feed p {
     display: block;
+  }
+
+  .feed-info h3  {
+    margin-left: 0;
   }
 
 }

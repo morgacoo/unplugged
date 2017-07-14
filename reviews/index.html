@@ -29,7 +29,7 @@
               <li><img src="#"/><a href="#">Concerts</a></li>
               <li><img src="#"/><a href="#">Reviews</a></li>
               <li><img src="#"/><a href="#">About Us</a></li>
-              <li><img src="#"/><a href="#">FAQ</a></li>                </ul>
+              <li><img src="#"/><a href="#">FAQ</a></li>
             </ul>
           </nav>
         </header>
@@ -52,17 +52,17 @@
           <!--SIDEBAR-->
 
           <aside class="sidebar">
-            <div class="newsletter">
+            <div class="newsletter clearfix">
               <h2>Newsletter Sign-Up</h2>
               <form>
-                <input type="text">
+                <input type="text" size="40" id="text-field">
                 <input type="submit" clas="btn" value="Sign Up">
               </form>
             </div><!--Newsletter-->
 
             <!--Hide on mobile-->
 
-            <div class="sidebar-upcoming">
+            <div class="sidebar-faq clearfix">
               <h2>Upcoming Concerts</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
               <a href="#" class="btn">See All</a>
@@ -70,7 +70,7 @@
 
             <!--Hide on mobile-->
 
-            <div class="sidebar-faq">
+            <div class="sidebar-faq clearfix">
               <h2>Frequently Asked Questions</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
               <a href="#" class="btn">See All</a>
@@ -79,15 +79,15 @@
         </section>
 
 
-        <!--FEED, NEWS, REVIEWS-->
+        <!--REVIEWS SECTION-->
 
 
           <section class="feed">
             <h3> Recent Reviews </h3>
 
-            <article class="feed-item">
+            <article class="feed-item feed-border clearfix">
                 <h3 class="feed-type">Review</h3>
-                <figure class="feed-image">
+                <figure class="feed-img">
                   <a href="reviews/reviews-detail.html"><img src="/Users/Morgan/Desktop/unplugged/img/mumford.jpg" alt="Mumford & Sons"/></a>
                 </figure>
               <div class="feed-info">
@@ -96,11 +96,10 @@
               </div>
             </article>
 
-            <hr>
 
-            <article class="feed-item">
+            <article class="feed-item feed-border clearfix">
               <h3 class="feed-type">Review</h3>
-              <figure class="feed-image">
+              <figure class="feed-img">
                 <a href="reviews/reviews-detail.html"><img src="/Users/Morgan/Desktop/unplugged/img/jose-gonzalez.jpg" alt="Jose Gonzalez" /></a>
               </figure>
               <div class="feed-info">
@@ -111,9 +110,9 @@
 
             <hr>
 
-            <article class="feed-item">
+            <article class="feed-item feed-border clearfix">
               <h3 class="feed-type">Review</h3>
-              <figure class="feed-image">
+              <figure class="feed-img">
                 <a href="reviews/reviews-detail.html"><img src="/Users/Morgan/Desktop/unplugged/img/laura-marling.jpg" alt="Laura Marling" /></a>
               </figure>
               <div class="feed-info">
@@ -124,9 +123,9 @@
 
             <hr>
 
-            <article class="feed-item">
+            <article class="feed-item feed-border clearfix">
               <h3 class="feed-type">Review</h3>
-              <figure class="feed-image">
+              <figure class="feed-img">
                 <a href="reviews/reviews-detail.html"><img src="/Users/Morgan/Desktop/unplugged/img/the-national.jpg" alt="The Nationals" /></a>
               </figure>
               <div class="feed-info">
@@ -137,9 +136,9 @@
 
             <hr>
 
-            <article class="feed-item">
+            <article class="feed-item feed-border clearfix">
               <h3 class="feed-type">Review</h3>
-              <figure class="feed-image">
+              <figure class="feed-img">
                 <a href="reviews/reviews-detail.html"><img src="/Users/Morgan/Desktop/unplugged/img/alt-j.jpg" alt="atl-J" /></a>
               </figure>
               <div class="feed-info">
@@ -152,7 +151,7 @@
 
             <article class="feed-item">
               <h3 class="feed-type">Review</h3>
-              <figure class="feed-image">
+              <figure class="feed-img">
                 <a href="reviews/reviews-detail.html"><img src="/Users/Morgan/Desktop/unplugged/img/black-keys.jpg" alt="The Black Keys" /></a>
               </figure>
               <div class="feed-info">
@@ -165,7 +164,9 @@
 
         <footer>
           <hr>
-          <div class="footer-logo"><img src="/Users/Morgan/Desktop/unplugged/img/logo-footer.jpg" alt="unplugged"/><div>
+          <div id="footer-logo">
+            <img src="/Users/Morgan/Desktop/unplugged/img/logo-footer.jpg" alt="unplugged"/>
+            <div>
         </footer>
 
 

@@ -117,12 +117,16 @@ a {
   font-weight: 700;
   color: #23a4cc;
   text-decoration: none;
-
 }
 
 p{
   font-size: 1em;
   line-height: 1.4;
+}
+
+img {
+  width: 100%;
+  height: auto;
 }
 
 h1, h2, h3, h4 {
@@ -131,7 +135,7 @@ h1, h2, h3, h4 {
 
 h1{
   /*font-family: 'Sansita', sans-serif;*/
-  font-size: 1.33em;
+  font-size: 1.4em;
   line-height: 1.6;
 }
 
@@ -149,25 +153,19 @@ h3{
   background-color: #ff1256;
   border: none;
   color: #fff;
-  font-weight: bold;
+  font-weight: 700;
   text-transform: uppercase;
-  line-height: 2.5em;
+  line-height: 2.5;
   text-align: center;
   box-shadow: 2px 2px 0px #DADADA;
   height: 2.5em;
-  width:100%;
+  width: 100%;
   display: block;
 }
 
     .btn:hover {
-      background-color: #b21e49;
+      background-color: #b21e49; <!-See if these colors are inverted-->
     }
-
-img {
-  width: 100%;
-  height: auto;
-}
-
 
 .sidebar-upcoming .btn{
   background-color: #b21e49;
@@ -184,6 +182,10 @@ input.btn{
         background-color: #b21e49;
     }/*WHAT DO THESE INPUTS DO?****/
 
+/*.no-border {
+  border: none;
+} In solution code, but not sure what it does*/
+
 /*****HEADER*******/
 .main-header {
   width: 100%;
@@ -191,22 +193,30 @@ input.btn{
 }
 
 #logo{
-  width: 60%;
-  padding-bottom: 0;
-  clear: both;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
 }
 
-nav {
-  width: cover;
-  margin-right: -2%;
-  background-color: #dddddd;
-  text-align: center;
+  #logo img {
+    width: 100%;
+    margin: auto;
+  }
 
+nav {
+  width: 100%; /*Use instead of "cover"-*/
+  background-color: #ddd;;
 }
 
 nav ul {
-  display: inline;
-  text-align: center;
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+    border: 1px solid #ccc;
+    text-align: center;
+    padding: 15px 0; /*The padding creates the height*/
 }
 
       nav ul li a {
@@ -215,116 +225,118 @@ nav ul {
         color: #333;
       }
 
+      nav ul li a:hover {
+        color: #FF1256;
+      }
 
-/*****MAIN*******/
+
+/*****MAIN CONTENT*******/
+
 main {
   width: 96%;
   background-color: #eeeeee;
   padding: 0 2%;
+  margin: auto;
+  max-width: 960px;
 }
 
 /* HOME PAGE & REVIEWS PAGE **********/
 
 /* Featured News Item =========================== */
 
-.hero-area {
-  padding: 0 2%;
-
+.top-story {
+  width: 100%;
+  border-bottom: 1px solid #ccc;
 }
 
 .top-img {
   width: 100%;
   height: auto;
+  margin: 0;
 }
-
-.top-story {
-  width: 100%;
-  /*padding: 0, 2%;*/
-}
-
-
 
 
 /*****ASIDE*******/
 
 .sidebar {
   width: 100%;
-  padding-bottom: 5%;
-}
-
-.sidebar-upcoming, .sidebar-faq {
-  display: none;
-  padding: 0 2%;
-}
-
-#text-field {
-  margin-bottom: 3%;
 }
 
 .newsletter {
-  width: 100%;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 20px;
 }
 
-.newsletter .btn {
-  margin-top: 3%;
-  margin-right: auto;
-  margin-left: auto;
+      .newsletter input {
+        width: 100%;
+        box-sizing: border-box;
+      } /*Changes width of text field and btn*/
+
+      .newsletter input[type="text"]{
+        margin-bottom: 10px;
+        padding: 5px 0;
+      }
+
+.sidebar-upcoming, .sidebar-faq {
+  display: none;
 }
 
-/*****FEED*******/
+.detail .newsletter {
+  border-bottom: none; /*What does this do*/
+}
+
+
+/*****FEED-NEWS/REVIEWS SECTION*******/
 
 
 .feed {
   width: 100%;
-  border-top: 1px solid #bfbfbf;
-  padding-top: 2%;
 }
 
 /*Don't show on mobile*/
     .feed p {
       display: none;
-      padding: 0 2%;
-    }
-
-    .feed h2 {
-      margin-top: 1%;
     }
 
 .feed-item {
   clear: both;
-  width: 100%;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 15px;
 }
 
     .feed-type {
       text-transform: uppercase;
-      font-size: 0.85em;
-      margin-left: 2%;
+      font-size: 0.8em;
+    }
+
+    .feed-item h3 {
+      margin: 0;
     }
 
     .feed-item h3 a {
       color: #222;
     }
 
-    .feed-item h3 a:hover {
-      color:#23a4cc
-    }
+        .feed-item h3 a:hover {
+          color: #23a4cc;
+        }
 
-.feed-img {
-  width: 40%;
-  float: left;
-  margin-left: 3%;
-  margin-right: 3%;
-  border: 2px solid #bfbfbf;
-}
+          /*.feed-item:nth-child(7){
+            border-bottom: none;
+          }----Don't think I need*/
 
+  .feed-info {
+    float: left;
+    width: 42%;
+  }
 
-.feed-info {
-  float: left;
-  width: 43%;
-  margin-left: 3%;
-  padding-right: 0;
-}
-
+  .feed-img {
+    width: 40%;
+    float: left;
+    margin-left: 3%;
+    margin-right: 3%;
+    border: 2px solid #bfbfbf;
+  }/* Matching to sample code really screws up*/
 
 .feed-border {
   border-bottom: 1px solid #bfbfbf;
@@ -337,6 +349,7 @@ main {
 /****DETAILED PAGES***/
 .reviews-img, .news-img {
   width: 100%;
+  margin: 0;
 }
 
 
@@ -351,6 +364,7 @@ footer {
 #footer-logo {
   width: 47.5%;
   margin: auto;
+  margin-top: 20px;
 }
 
 

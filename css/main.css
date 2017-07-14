@@ -470,6 +470,11 @@ footer {
     margin-left:4%;
   }
 
+  .logo-img {
+    width: 40%;
+    height: auto;
+  }/*Added for responsiveness*/
+
   #logo {
     width: 40%;
     float: left;
@@ -478,13 +483,14 @@ footer {
 
   nav {
     width: 100%;
-    padding-right: 10%;
+    float: left;
     /*margin-top: 3%;*/
   }
 
   nav li {
       display: inline;
-      margin-right: 2%;
+      margin-right: 5%;
+      float: right;
     }
 
 

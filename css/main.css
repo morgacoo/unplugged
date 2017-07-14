@@ -163,6 +163,12 @@ h3{
       background-color: #b21e49;
     }
 
+img {
+  width: 100%;
+  height: auto;
+}
+
+
 .sidebar-upcoming .btn{
   background-color: #b21e49;
 }
@@ -185,8 +191,9 @@ input.btn{
 }
 
 #logo{
-  width: 100%;
+  width: 60%;
   padding-bottom: 0;
+  clear: both;
 }
 
 nav {
@@ -227,7 +234,7 @@ main {
 
 .top-img {
   width: 100%;
-  /*padding: 0, 2%;*/
+  height: auto;
 }
 
 .top-story {
@@ -466,7 +473,7 @@ footer {
    }
 
    .top-img {
-     width: 55%;
+     width: 57%;
      float: right;
      padding-right: 3%;
    }
@@ -635,41 +642,62 @@ footer {
     padding: 0 2%;
   }
 
-  .hero-area {
+  #logo {
+    clear: both;
+  }
+
+  /*.hero-area {
     width: 100%;
     clear: both;
+  }*/
+
+  .top-story {
+    width: 50%;
+    clear: both;
+    padding-right: 0;
+  }
+
+  .hero-area {
+    border: 1px solid black;
+    overflow: auto;
+    width: 96%;
   }
 
   .top-img {
     float: left;
-    width: 50%;
-    margin-right: 0%;
-    clear: both;
+    width: 100%;
+    margin-right: 0;
     margin-left: 0;
+    border: 1px solid black;
+  }
+
+  .top-img img {
+    max-width: 620px;
   }
 
   .top-info {
-    float: left;
-    width: 50%;
-    clear: both;
+    width: 100%;
+    border: 1px solid black;
   }
 
   header h1 {
     font-size: 2em;
     font-weight: bold;
     line-height: 1.2em;
+    border: 1px solid black;
   }
 
 /*****SIDEBAR****/
 
   .sidebar {
-    width: 33%;
+    width: 40%;
     padding: 0, 1%;
     float: right;
     border-top: 1px solid #eee; /*Made border same color as background color to hide*/
-    margin-right: 2%;
+    margin-right: 1%;
     margin-left: 0;
     clear: both;
+    border: 1px solid black;
   }
 
   #text-field {

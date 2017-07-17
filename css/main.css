@@ -248,6 +248,16 @@ main {
   max-width: 960px;
 }
 
+/****FAQ Page***/
+ .faq p {
+   font-weight: light !important;
+ }
+
+ .faq-p {
+   font-weight: lighter !important;
+ } /**Not working*/
+
+
 /* HOME PAGE & REVIEWS PAGE **********/
 
 /* Featured News Item =========================== */
@@ -501,9 +511,10 @@ footer {
    }
 
    .top-img {
-     width: 57%;
+     width: 59%;
      float: left;
-     padding-right: 3%;
+     padding-right: 1%;
+     padding-bottom: 2%;
    }
 
    .top-info {
@@ -527,6 +538,7 @@ footer {
     width: 40%;
     float: right;
     border-top: 1px solid #bfbfbf;
+    padding-left: 0;
   }
 
   /*.clearfix::after {
@@ -548,10 +560,12 @@ footer {
     display: block;
     border-bottom: 1px solid #bfbfbf;
     padding-bottom: 6%;
+    padding-left: 2%;
+    margin-right: 3%;
   }
 
     .sidebar-faq, .sidebar-upcoming h2, p, a {
-      width: 100% !important;
+      width: 99% !important;
     }
 
     .newsletter {

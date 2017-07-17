@@ -370,7 +370,54 @@ main {
   margin: 0;
 }
 
+/****ABOUT PAGE****/
+.mission {
 
+}
+
+.team {
+
+}
+
+.team-member{
+
+}
+
+.team-img {
+  width: 40%;
+  padding-bottom: 40%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  float: left;
+  margin-right: 20px;
+  border: 1px solid #ccc;
+}
+
+.team-name {
+
+}
+
+.team-title {
+
+}
+
+.team-description {
+
+}
+
+
+#team-img-jack {
+  background-image: url('/Users/Morgan/Desktop/unplugged/img/jack-smith.jpg');
+}
+
+#team-img-lana {
+  background-image: url('/Users/Morgan/Desktop/unplugged/img/lana-walters.jpg');
+}
+
+#team-img-willow {
+  background-image: url('/Users/Morgan/Desktop/unplugged/img/willow-white.jpg');
+}
 
 /*****FOOTER*******/
 footer {

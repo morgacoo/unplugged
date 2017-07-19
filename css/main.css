@@ -237,6 +237,9 @@ nav ul li {
         color: #FF1256;
       }
 
+nav i {
+  padding-right: 10px;
+}
 
 /*****MAIN CONTENT*******/
 

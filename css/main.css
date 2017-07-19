@@ -302,6 +302,10 @@ main {
   display: none;
 }
 
+.sidebar-faq i {
+  padding-right: 10px;
+}
+
 .detail .newsletter {
   border-bottom: none; /*What does this do*/
 }
@@ -449,6 +453,35 @@ main {
 }
 
 
+/***CONCERTS PAGE****/
+.concert-list {
+  width: 100%;
+}
+
+.row {
+  width: 100%;
+
+}
+
+.col-sm-2 {
+  float: left;
+  border: 2px solid #ccc;
+  padding: 3px 6px;
+}
+
+.concert-date-box {
+  text-align: center;
+
+}
+
+.concert-date-box h1 {
+  font-weight: bold;
+  line-height: .2em;
+}
+
+.col-sm-10 {
+  float: right;
+}
 
 /*****FOOTER*******/
 footer {

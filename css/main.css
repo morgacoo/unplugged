@@ -460,6 +460,8 @@ main {
 
 .concert-item {
   border-bottom: 1px solid #ccc;
+  margin-bottom: 5%;
+  margin-top: 5%;
 }
 
 .clearfix {
@@ -468,19 +470,21 @@ main {
 
 .row {
   width: 100%;
+  padding-left: 2%;
+  padding-right: 2%;
 }
 
 .col-sm-2 {
   float: left;
   border: 2px solid #ccc;
-  padding: 3px 6px;
-  margin: 1%;
+  padding-right: 0;
+  margin: 0;
   width: 16.67%;
-
 }
 
 #concert-date-box {
   text-align: center;
+  margin-right: 0;
 }
 
 #concert-date-box h1 {
@@ -491,21 +495,33 @@ main {
 .col-sm-10 {
   float: right;
   margin: 1%;
-  border: 1px solid black;
   width: 60%;
+  padding-left: 0;
+}
+
+#concert-details {
+  padding-left: 0;
+  padding-right: 18%;
+  padding-bottom: 3%;
+
 }
 
 #concert-details h2 {
-  font-size: 1.3em;
-  font-weight: bolder;
+  font-size: 1.2em;
+  font-weight: 900 !important;
+  margin-top: 0;
 }
+
 #concert-details h2, p {
-  padding: 0 5% 0 15%;
+  padding: 0;
+  line-height: .3em;
 }
 
 #concert-details i {
   display: none;
 }
+
+
 
 /*****FOOTER*******/
 footer {

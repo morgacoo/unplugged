@@ -372,14 +372,19 @@ main {
 
 /****ABOUT PAGE****/
 .mission {
-
+  margin-top: 2%;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding: 15px 0;
 }
 
 .team {
-
+  margin-bottom: 35%;
+  border-bottom: 1px solid #ccc;
 }
 
 .team-member{
+  padding: 15px 0 25px 0;
 
 }
 
@@ -403,8 +408,14 @@ main {
 }
 
 .team-description {
-
+  display: none;
 }
+
+
+/*.team:nth-last-child(1){
+  margin-bottom: 40%;
+}Figure out how to do*/
+
 
 
 #team-img-jack {
@@ -418,6 +429,8 @@ main {
 #team-img-willow {
   background-image: url('/Users/Morgan/Desktop/unplugged/img/willow-white.jpg');
 }
+
+
 
 /*****FOOTER*******/
 footer {
@@ -521,35 +534,43 @@ footer {
 
 /****HEADER****/
   .main-header {
-    width: 100%;
-    max-width: 940px;
-    color: #ddd;
-    margin-left:4%;
+    width: 94%;
+    max-width: 960px;
+    margin: auto;
+    background-color: #ddd;
+    padding: 0 3%;
+    clear: both;
   }
 
-  .logo-img {
+  /*.logo-img {
     width: 40%;
     height: auto;
+    float: left;
+    clear: both;
   }/*Added for responsiveness*/
 
   #logo {
     width: 40%;
     float: left;
-    margin-left: 2%;
+
   }
 
   nav {
-    width: 100%;
-    float: left;
-    /*margin-top: 3%;*/
+    width: 60%;
+    float: right;
   }
 
-  nav li {
+  nav ul {
+    margin: 0;
+  }
+
+  nav ul li {
       display: inline;
       margin-right: 5%;
       float: right;
+      top: 16px;/*What does this do*/
     }
-
+ /*Need to figure out the floats for the nav bar*/
 
 /***FEATURED NEWS ITEM***/
 
@@ -681,19 +702,84 @@ footer {
       display: inline;
   }
 
+  /****ABOUT PAGE****/
+  .mission {
+    width: 100%;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 10%;
+    clear: both;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .mission h1 {
+    font-size: 2em;
+    font-weight: bold;
+  }
+
+  .mission p {
+    font-size: 1.25em;
+
+  }
+
+  .team {
+    padding-left: 2%;
+  }
+
+  .team-member{
+    font-weight:normal;
+  }
+
+  .team-img {
+    width: 20%;
+    padding-bottom: 20%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    float: left;
+    margin-right: 20px;
+    border: 1px solid #ccc;
+  }
+
+  .team-name {
+    font-size: 1.3em;
+    margin-top: 0;
+    padding-left: 30%;
+    font-weight: 900;
+  }
+
+  .team-title {
+    padding-left: 30%;
+  }
+
+  .team-description {
+    display:none;
+  }
+
+
+  #team-img-jack {
+    background-image: url('/Users/Morgan/Desktop/unplugged/img/jack-smith.jpg');
+  }
+
+  #team-img-lana {
+    background-image: url('/Users/Morgan/Desktop/unplugged/img/lana-walters.jpg');
+  }
+
+  #team-img-willow {
+    background-image: url('/Users/Morgan/Desktop/unplugged/img/willow-white.jpg');
+  }
 
 /*****FOOTER*****/
 
   footer {
     width: 100%;
     clear: both;
-    padding-top: 10%;
+    margin-top: 0;
   }
 
-  #footer-logo {
+  .footer-logo {
     width: 30%;
     margin: auto;
-
   }
 
 }
@@ -711,7 +797,6 @@ footer {
   }
 
   nav {
-    width: 1400px;
     min-width: 940px;
     background-color: #dddddd;
   }
@@ -869,6 +954,86 @@ footer {
   .feed-info h3  {
     margin-left: 0;
   }
+
+/***ABOUT PAGE****/
+
+  .mission {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 10%;
+    clear: both;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .mission h1 {
+    font-size: 2em;
+    font-weight: bold;
+  }
+
+  .mission p {
+    font-size: 1.25em;
+    overflow:auto;
+    clear:both;
+    width: 50%;
+
+  }
+
+  .team {
+    padding-left: 2%;
+  }
+
+  .team-member{
+    font-weight: normal;
+    width: 100%;
+  }
+
+  .team-img {
+    width: 20%;
+    padding-bottom: 20%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    float: left;
+    margin-right: 20px;
+    border: 1px solid #ccc;
+  }
+
+  .team-name {
+    font-size: 1.3em;
+    margin-top: 0;
+    padding-left: 30%;
+    font-weight: 900;
+    border: 1px solid black;
+  }
+
+  .team-title {
+    padding-left: 30%;
+    border: 1px solid black;
+  }
+
+  .team-description {
+    display: inline-block;
+    width: 60%;
+    clear: both;
+    border: 1px solid black;
+    padding-left: 30%;
+  }
+
+
+  #team-img-jack {
+    background-image: url('/Users/Morgan/Desktop/unplugged/img/jack-smith.jpg');
+  }
+
+  #team-img-lana {
+    background-image: url('/Users/Morgan/Desktop/unplugged/img/lana-walters.jpg');
+  }
+
+  #team-img-willow {
+    background-image: url('/Users/Morgan/Desktop/unplugged/img/willow-white.jpg');
+  }
+
+
 
 }
 

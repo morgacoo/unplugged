@@ -10,6 +10,10 @@
         <link rel="../apple-touch-icon" href="../apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
 
+        <!--FONTS-->
+        <link href="https://fonts.googleapis.com/css?family=Sansita|Source+Sans+Pro" rel="stylesheet">
+
+
         <link rel="stylesheet" href="../css/normalize.css">
         <link rel="stylesheet" href="../css/main.css">
         <script src="../js/vendor/modernizr-2.8.3.min.js"></script>
@@ -22,19 +26,24 @@
         <!-- Add your site or application content here -->
         <header class="main-header">
           <h1 id="logo">
-            <a href="index.html"><img src="img/logo.png" alt="Unplugged" /></a>
+            <a href="../index.html"><img src="/Users/Morgan/Desktop/unplugged/img/logo-nav.jpg" alt="Unplugged" /></a>
           </h1>
-          <nav>
+          <nav class="about-nav">
             <ul>
-              <li><img src="#"/><a href="#">Concerts</a></li>
-              <li><img src="#"/><a href="#">Reviews</a></li>
+              <li><img src="#"/><a href="../concerts/index.html">Concerts</a></li>
+              <li><img src="#"/><a href="../reviews/index.html">Reviews</a></li>
               <li><img src="#"/><a href="#">About Us</a></li>
-              <li><img src="#"/><a href="#">FAQ</a></li>
+              <li><img src="#"/><a href="faq.html">FAQ</a></li>
             </ul>
           </nav>
         </header>
 
         <main>
+          <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2968.8374938399447!2d-87.69208253490412!3d41.91785202090517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x74585bd036c649a1!2sConcord+Music+Hall!5e0!3m2!1sen!2sus!4v1500490942333" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div>
+
+          
           <div class="mission">
             <h1>Mission Statement</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc edet odio.</p>
@@ -43,6 +52,7 @@
 
           <div class="team">
             <h1> Meet the Team </h1>
+
             <div class="team-member clearfix">
                 <div class="team-img" id="team-img-jack"></div>
                 <h2 class="team-name">Jack Smith</h2>
@@ -50,7 +60,6 @@
                 <p class="team-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio.</p>
             </div><!--Team Member-->
 
-            <h1> Meet the Team </h1>
             <div class="team-member clearfix">
                 <div class="team-img" id="team-img-lana"></div>
                 <h2 class="team-name">Lana Walters</h2>
@@ -58,8 +67,7 @@
                 <p class="team-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio.</p>
             </div><!--Team Member-->
 
-            <h1> Meet the Team </h1>
-            <div class="team-member clearfix">
+            <div class="team-member clearfix" id="last-member">
                 <div class="team-img" id="team-img-willow"></div>
                 <h2 class="team-name">Willow White</h2>
                 <p class="team-title">Photographer</p>
@@ -67,13 +75,12 @@
             </div><!--Team Member-->
           </div><!--Team-->
 
-
-
         </main>
 
         <footer>
-          <hr>
-          <div class="footer-logo"><img src="#" alt="unplugged" /></div>
+          <div id-"footer-logo">
+            <img src="../img/logo-footer.jpg" alt="unplugged" />
+          </div>
         </footer>
 
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>

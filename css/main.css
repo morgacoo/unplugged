@@ -454,6 +454,10 @@ main {
 
 
 /***CONCERTS PAGE****/
+.main-header {
+  clear: both;
+}
+
 .concert-list {
   width: 100%;
 }
@@ -510,6 +514,13 @@ main {
   display: none;
 }
 
+.concerts-btn {
+  background-color: #b21e49;
+}
+
+#concerts-newsletter {
+  display: none;
+}
 
 
 /*****FOOTER*******/
@@ -866,9 +877,42 @@ footer {
 
 
 /****CONCERTS PAGE*****/
-.concert-details i {
-  display: inline;
-  padding: 10px;
+
+.concert-list {
+  text-align: left;
+  margin-top: 3%;
+  margin-bottom: 50%;
+}
+
+.row {
+  width: 100%;
+  border-right: 1px solid #ccc;
+}
+
+.col-md-4 {
+  width: 48%;
+  float: left;
+  padding-left: 0;
+  margin-top: 2%;
+  margin-bottom: 1%;
+  margin-right: 0;
+}
+
+.concert-list:nth-child(1){
+  margin-bottom: 20%;
+}
+
+.sidebar-concerts {
+  float: right;
+  width: 30%;
+}
+
+.concerts-btn {
+  width: 100%;
+}
+
+#concerts-newsletter {
+  display: none;
 }
 
 /*****FOOTER*****/
@@ -879,9 +923,10 @@ footer {
     margin-top: 0;
   }
 
-  .footer-logo {
+  #footer-logo {
     width: 30%;
     margin: auto;
+    padding-top: 15%;
   }
 
 }
@@ -1059,8 +1104,6 @@ footer {
 
 /***ABOUT PAGE****/
 
-
-
   .mission {
     width: 100%;
     margin-left: 0;
@@ -1137,7 +1180,11 @@ footer {
     background-image: url('/Users/Morgan/Desktop/unplugged/img/willow-white.jpg');
   }
 
-
+/****CONCERTS PAGE*****/
+.concert-details i {
+  display: inline;
+  padding: 10px;
+}
 
 }
 

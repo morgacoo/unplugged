@@ -189,48 +189,41 @@ input.btn{
 /*****HEADER*******/
 .main-header {
   width: 100%;
-  padding-right: 0;
 }
 
 
 .logo-img {
   width: 100%;
   height: auto;
-  padding:0;
-  margin: 0;
+  margin-top: -10px;
+  margin-bottom: -13px;
 }/* Needed for responsiveness*/
 
-/*#logo{
-  width: 100%;
-  margin: 0 auto;
-  text-align: center;
-}
 
-  #logo img {
-    width: 100%;
-    margin: auto;
-  } Don't think needed since have above .logo-img*/
 
 nav {
   width: 100%; /*Use instead of "cover"-*/
-  background-color: #ddd;;
+  background-color: #ddd;
+  margin-top:0;
+  padding-top:0;
 }
 
 nav ul {
   list-style: none;
   padding: 0;
-  padding-top: 25px;
 }
 
 nav ul li {
     text-align: center;
     padding: 15px 0; /*The padding creates the height*/
+    font-weight: 900 !important;
 }
 
       nav ul li a {
         font-size: 1.125em;
         text-transform: uppercase;
         color: #333;
+
       }
 
       nav ul li a:hover {
@@ -267,7 +260,6 @@ main {
 
 .top-story {
   width: 100%;
-  border-bottom: 1px solid #ccc;
 }
 
 .top-img {
@@ -276,6 +268,11 @@ main {
   margin: 0;
 }
 
+.top-info h1 {
+  font-weight: 900;
+  font-size: 2em;
+  line-height: 1.2em;
+}
 
 /*****ASIDE*******/
 
@@ -286,6 +283,10 @@ main {
 .newsletter {
   border-bottom: 1px solid #ccc;
   padding-bottom: 20px;
+}
+
+.newsletter h2 {
+  font-size: 1.2em;
 }
 
       .newsletter input {
@@ -318,6 +319,11 @@ main {
   width: 100%;
 }
 
+.feed h2 {
+  font-size: 1.2em;
+}
+
+
 /*Don't show on mobile*/
     .feed p {
       display: none;
@@ -332,6 +338,7 @@ main {
     .feed-type {
       text-transform: uppercase;
       font-size: 0.8em;
+      padding-top: 2%;
     }
 
     .feed-item h3 {
@@ -353,18 +360,21 @@ main {
   .feed-info {
     float: left;
     width: 42%;
+    padding-top: 12px;
+    font-size: 1.0em;
   }
 
   .feed-img {
     width: 40%;
     float: left;
-    margin-left: 3%;
+    margin-left: 0;
     margin-right: 3%;
     border: 2px solid #bfbfbf;
   }/* Matching to sample code really screws up*/
 
 .feed-border {
   border-bottom: 1px solid #bfbfbf;
+
 }
 
 .clearfix {
@@ -528,6 +538,7 @@ footer {
   width: 100%;
   margin: auto;
   clear:both;
+  margin-top: 50%;
 }
 
 #footer-logo {
@@ -643,6 +654,9 @@ footer {
   nav {
     width: 100%;
     float: right;
+    display: inline;
+    clear: none;
+
   }
 
   .logo-img {
@@ -650,6 +664,8 @@ footer {
     float: left;
     margin-right: 0;
     padding-right: 0;
+    clear: none;
+    margin-top: -5%;
   }
 
 
@@ -675,19 +691,21 @@ footer {
    }
 
    .top-img {
-     width: 59%;
+     width: 57%;
      float: left;
      padding-right: 1%;
      padding-bottom: 2%;
+     margin-top: 3%;
    }
 
    .top-info {
-     width: 40%;
+     width: 39%;
      float: left;
+     margin-left: 3%;
    }
 
-   header h1 {
-     font-weight:900;
+   .top-info h1 {
+     font-size: 1.7em;
    }
 
    .top-info p {
@@ -717,6 +735,10 @@ footer {
 
   .sidebar p {
     font-size: 1em;
+  }
+
+  .sidebar i {
+    display: none;
   }
 
   .sidebar-upcoming,

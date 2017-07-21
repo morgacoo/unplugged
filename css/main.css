@@ -136,7 +136,7 @@ h1, h2, h3, h4 {
 h1{
   /*font-family: 'Sansita', sans-serif;*/
   font-size: 1.4em;
-  line-height: 1.6;
+  line-height: 1.6em;
 }
 
 h2{
@@ -219,10 +219,10 @@ nav {
 nav ul {
   list-style: none;
   padding: 0;
+  padding-top: 25px;
 }
 
 nav ul li {
-    border: 1px solid #ccc;
     text-align: center;
     padding: 15px 0; /*The padding creates the height*/
 }
@@ -507,7 +507,7 @@ main {
 
 .concert-details h2, p {
   padding: 0;
-  line-height: .3em;
+  /*line-height: .3em;*//*NEED TO FIGURE OUT HOW JUST TO APPLY TO CONCERT DETAILS-WAS MESSING WITH MAIN PAGE TOO*/
 }
 
 .concert-details i {
@@ -640,25 +640,30 @@ footer {
     clear: both;
   }/*Added for responsiveness*/
 
-  #logo {
-    width: 40%;
-    float: left;
-
-  }
-
   nav {
-    width: 60%;
+    width: 100%;
     float: right;
   }
 
+  .logo-img {
+    width: 40%;
+    float: left;
+    margin-right: 0;
+    padding-right: 0;
+  }
+
+
+
   nav ul {
     margin: 0;
+    padding: 0;
   }
 
   nav ul li {
       display: inline;
-      margin-right: 5%;
+      margin-right: 2%;
       float: right;
+      padding-left: 0%;
       top: 16px;/*What does this do*/
     }
  /*Need to figure out the floats for the nav bar*/
@@ -877,6 +882,11 @@ footer {
 
 
 /****CONCERTS PAGE*****/
+
+.concert-heading {
+  clear: both;
+  padding-top: 2%;
+}
 
 .concert-list {
   text-align: left;

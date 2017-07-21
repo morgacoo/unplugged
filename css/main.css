@@ -175,6 +175,10 @@ h3{
   background-color: #b21e49;
 }
 
+.sidebar-faq .btn:hover {
+  background-color: #ff1256;
+}
+
 input.btn{
     background-color: #ff1256;
 }
@@ -331,7 +335,7 @@ main {
 
 .feed-item {
   clear: both;
-  border-bottom: 1px solid #ccc;
+  /*border-bottom: 1px solid #ccc;*/
   padding-bottom: 15px;
 }
 
@@ -636,11 +640,11 @@ footer {
 
 /****HEADER****/
   .main-header {
-    width: 94%;
+    width: 100%;
     max-width: 960px;
     margin: auto;
     background-color: #ddd;
-    padding: 0 3%;
+    padding: 0 0%;
     clear: both;
   }
 
@@ -653,34 +657,39 @@ footer {
 
   nav {
     width: 100%;
-    float: right;
+    float: left;
     display: inline;
     clear: none;
-
+    margin-top: 0;
+    z-index: 1;
+    position: relative;
   }
 
   .logo-img {
-    width: 40%;
+    width: 37%;
     float: left;
-    margin-right: 0;
-    padding-right: 0;
+    padding-right: 2%;
     clear: none;
-    margin-top: -5%;
+    margin-top: 0;
+    margin-left: 2%;
+    display: inline;
+    z-index: 2;
+    position: absolute;
   }
 
 
 
   nav ul {
     margin: 0;
-    padding: 0;
+    padding-left: 44%;
   }
 
   nav ul li {
       display: inline;
-      margin-right: 2%;
-      float: right;
-      padding-left: 0%;
-      top: 16px;/*What does this do*/
+      margin-right: 3%;
+      float: left;
+      padding-top: 38px;
+      padding-bottom: 38px;
     }
  /*Need to figure out the floats for the nav bar*/
 
@@ -688,6 +697,7 @@ footer {
 
    .top-story{
      width: 100%;
+     padding-top: 3%;
    }
 
    .top-img {
@@ -730,7 +740,7 @@ footer {
   }*/
 
   .sidebar h2 {
-    font-size: 1.25em;
+    font-size: 1.5em;
   }
 
   .sidebar p {
@@ -766,7 +776,7 @@ footer {
   .feed {
     width: 57%;
     float: left;
-    padding-left: 2%;
+    padding-left: 0;
     border-top: 1px solid #bfbfbf;
     border-right: 1px solid #bfbfbf;
   }
@@ -774,6 +784,7 @@ footer {
       .feed h2 {
         padding-left: 0;
       }
+
   .feed-img {
     width: 35%;
     float: left;
@@ -785,14 +796,20 @@ footer {
     float: left;
     margin-right: 2%;
     margin-left: 1%;
+    font-size: 1.3em;
+    font-weight: 100;
   }
 
   .feed-item {
-
+    padding-left: 2%;
   }
 
   .feed-type {
     margin-left: 0;
+  }
+
+  .feed:nth-child(1) {
+    border-bottom: none;
   }
 
 /*****DETAILS PAGES******/
@@ -952,13 +969,13 @@ footer {
   footer {
     width: 100%;
     clear: both;
-    margin-top: 0;
+    padding-top: 15%;
   }
 
   #footer-logo {
     width: 30%;
     margin: auto;
-    padding-top: 15%;
+    padding-top: 0;
   }
 
 }

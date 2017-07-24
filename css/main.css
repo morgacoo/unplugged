@@ -677,8 +677,6 @@ footer {
     position: absolute;
   }
 
-
-
   nav ul {
     margin: 0;
     padding-left: 44%;
@@ -691,11 +689,10 @@ footer {
       padding-top: 38px;
       padding-bottom: 38px;
     }
- /*Need to figure out the floats for the nav bar*/
 
 /***FEATURED NEWS ITEM***/
 
-   .top-story{
+   .top-story {
      width: 100%;
      padding-top: 3%;
    }
@@ -987,58 +984,49 @@ footer {
 @media screen and (min-width: 940px){
   /*Desktop styles here*/
 
+/***HEADER/LOGO*****/
 
-  main-header {
+  .main-header {
     width: 100%;
   }
 
   nav {
     min-width: 940px;
-    background-color: #dddddd;
+    background-color: #ddd;
   }
 
   nav ul {
     padding-right: 2%;
+    padding-left: 50%;
   }
 
   nav ul li {
-    padding-right: 2%;
+    padding-right: 4%;
     font-size: 0.875em;
   }
 
+/*****MAIN/TOP STORY*****/
 
   main {
     width: 96%;
     padding: 0 2%;
   }
 
-  #logo {
-    clear: both;
-  }
-
-  /*.hero-area {
-    width: 100%;
-    clear: both;
-  }*/
-
   .top-story {
-    width: 50%;
-    clear: both;
-    padding-right: 0;
-  }
-
-  .hero-area {
-    border: 1px solid black;
-    overflow: auto;
-    width: 96%;
+    width: 40%;
+    padding-right: 5%;
+    margin-right: 0;
+    padding-top: 5%;
+    float: left;
   }
 
   .top-img {
-    float: left;
     width: 100%;
     margin-right: 0;
     margin-left: 0;
-    border: 1px solid black;
+    padding-left: 3%;
+    border-right: 1px solid #ccc;
+    clear: none;
   }
 
   .top-img img {
@@ -1047,28 +1035,33 @@ footer {
 
   .top-info {
     width: 100%;
-    border: 1px solid black;
+    margin-right: 0;
+    margin-left: 0;
+    padding-left: 3%;
+    border-right: 1px solid #ccc;
+    clear: none;
   }
 
   header h1 {
     font-size: 2em;
     font-weight: bold;
     line-height: 1.2em;
-    border: 1px solid black;
   }
 
 /*****SIDEBAR****/
 
   .sidebar {
-    width: 40%;
-    padding: 0, 1%;
+    width: 30%;
     float: right;
     border-top: 1px solid #eee; /*Made border same color as background color to hide*/
-    margin-right: 1%;
+    margin-right: 2%;
     margin-left: 0;
-    clear: both;
-    border: 1px solid black;
+    margin-bottom: 2%;
+    border-left: 1px solid #ccc;
   }
+
+  .sidebar-faq {
+}
 
   #text-field {
     size: 80px;
@@ -1076,31 +1069,39 @@ footer {
 
   .newsletter {
     width: 100%;
-    padding: 0 1%;
+    padding-right: 5%;
+    padding-left: 5%;
+    padding-bottom: 5%;
+    border-bottom: none;
   }
 
   .signup { /*newsletter signup*/
     width: 100%;
-    padding: 0 0;
+    padding: 0 5%;
   }
 
   .signup-form {
     width: 98%;
-  }
-
-  .sidebar-upcoming {
-    width: 30%;
-    padding: 0 1%;
-  }
-
-  .upcoming-btn {
-    width: 100%;
+    padding: 0 5%;
   }
 
   .sidebar-faq {
     width: 30%;
-    padding: 0 1%;
+    padding-right: 5%;
+    padding-left: 5%;
+    padding-bottom: 5%;
+    border-top: 1px solid #ccc;
+    border-bottom: none;
   }
+
+  .sidebar i {
+    display: inline;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
 
 /***FEED****/
 
@@ -1110,9 +1111,9 @@ footer {
     margin-left: 0%;
   }
 
-  /*.feed-type {
-    width: 12%; /*needed?
-  }*/
+  .feed-type {
+    font-size: 1em;
+  }
 
   .feed-image {
     width: 16.67%;
@@ -1123,32 +1124,18 @@ footer {
     width: 100%;
   }
 
-  .signup-btn {
-    width: 100%;
-    padding: 0, 0;
-  }
-
-  .sidebar-upcoming{
-    width: 30%;
-    padding: 0, 1%;
-  }
-
-  .sidebar-faq {
-    width: 30%;
-    padding: 0, 1%;
-  }
-
   .feed-info h3 {
-    font-size: 1.25em;
+    font-size: 1.15em;
     font-weight: bold;
   }
 
   .feed p {
     display: block;
+    font-size: .9em;
   }
 
-  .feed-info h3  {
-    margin-left: 0;
+  .feed h2  {
+    padding-left: 2%
   }
 
 /***ABOUT PAGE****/

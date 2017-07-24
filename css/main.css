@@ -1121,7 +1121,7 @@ footer {
   .feed {
     width: 100%;
     border-right: 1px solid #eee;/*Made same color as background color to hide*/
-    margin-left: 0%;
+    margin-left: -1%;
   }
 
   .feed-type {

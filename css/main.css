@@ -830,6 +830,7 @@ footer {
 
   aside.detail {
     width: 100%;
+    padding-top: 3%;
   }
 
     .detail .newsletter h2{
@@ -838,7 +839,27 @@ footer {
 
     .detail .newsletter input {
       display: inline;
+      width: 30%;
   }
+
+    #review-text-field {
+      width: 65%;
+    }
+
+  /*  .detail .newsletter input [type="submit"] {
+      width: 30%;
+      display: inline;
+    }*/
+
+  /*****REVIEWS-DETAILS****/
+
+  .bold-review-title {
+    font-size: 1.5em;
+    padding-top:10%;
+  }
+
+
+
 
   /****ABOUT PAGE****/
   .map-container {

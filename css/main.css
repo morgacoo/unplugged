@@ -391,6 +391,12 @@ main {
   margin: 0;
 }
 
+.bold-review-title {
+  font-size: 2.5em;
+  line-height: 1.3em;
+}
+
+
 /****ABOUT PAGE****/
 .map-container {
   position: relative;

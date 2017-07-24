@@ -988,6 +988,7 @@ footer {
 
   .main-header {
     width: 100%;
+    clear: both;
   }
 
   nav {
@@ -1005,6 +1006,10 @@ footer {
     font-size: 0.875em;
   }
 
+  .logo-img img {
+    max-width: 400px;
+  }
+
 /*****MAIN/TOP STORY*****/
 
   main {
@@ -1012,21 +1017,28 @@ footer {
     padding: 0 2%;
   }
 
+  .hero-area {
+    width: 100%;
+    display: inline;
+  }
+
   .top-story {
-    width: 40%;
+    width: 65%;
     padding-right: 5%;
     margin-right: 0;
     padding-top: 5%;
     float: left;
+    clear: both;
+    display: inline;
   }
 
   .top-img {
     width: 100%;
     margin-right: 0;
     margin-left: 0;
-    padding-left: 3%;
-    border-right: 1px solid #ccc;
-    clear: none;
+    padding-left: 2%;
+    clear: both;
+    display: inline;
   }
 
   .top-img img {
@@ -1037,15 +1049,16 @@ footer {
     width: 100%;
     margin-right: 0;
     margin-left: 0;
-    padding-left: 3%;
-    border-right: 1px solid #ccc;
-    clear: none;
+    padding-left: 2%;
+    clear: both;
+    display: inline;
   }
 
   header h1 {
     font-size: 2em;
     font-weight: bold;
     line-height: 1.2em;
+    clear: both;
   }
 
 /*****SIDEBAR****/
@@ -1058,10 +1071,9 @@ footer {
     margin-left: 0;
     margin-bottom: 2%;
     border-left: 1px solid #ccc;
+    margin-top: -63%;/*Better way to float*/
+    padding-top: 0%;
   }
-
-  .sidebar-faq {
-}
 
   #text-field {
     size: 80px;
@@ -1070,9 +1082,10 @@ footer {
   .newsletter {
     width: 100%;
     padding-right: 5%;
-    padding-left: 5%;
+    padding-left: 7%;
     padding-bottom: 5%;
     border-bottom: none;
+    margin-top: 0;
   }
 
   .signup { /*newsletter signup*/
@@ -1082,13 +1095,13 @@ footer {
 
   .signup-form {
     width: 98%;
-    padding: 0 5%;
+    padding: 0 7%;
   }
 
   .sidebar-faq {
     width: 30%;
     padding-right: 5%;
-    padding-left: 5%;
+    padding-left: 7%;
     padding-bottom: 5%;
     border-top: 1px solid #ccc;
     border-bottom: none;

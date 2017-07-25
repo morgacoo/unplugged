@@ -824,7 +824,7 @@ footer {
     border-bottom: none;
   }
 
-/*****DETAILS PAGES******/
+/*****DETAILS PAGES (News)******/
 
   .reviews-img, .news-img {
     width: 50%;
@@ -859,6 +859,11 @@ footer {
       width: 30%;
       display: inline;
     }*/
+
+
+    .top-story-news {
+      padding-top: 13%;
+    }
 
   /*****REVIEWS-DETAILS****/
 

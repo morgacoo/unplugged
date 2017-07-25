@@ -398,6 +398,15 @@ main {
 
 
 /****ABOUT PAGE****/
+.text-indent {
+  text-indent: 63px;
+  line-height: 0em;
+}
+
+.contact p {
+  font-weight: 700;
+}
+
 .map-container {
   position: relative;
   padding-bottom: 75%;
@@ -862,11 +871,34 @@ footer {
 
 
   /****ABOUT PAGE****/
+  .contact-nav {
+    padding-left: 5%;
+  }
+
+  .contact {
+    float: left;
+    margin-top: 5%;
+  }
+
+  .text-indent {
+    text-indent: 63px;
+    line-height: 0em;
+  }
+
+  .contact p {
+    font-weight: 700;
+  }
+
   .map-container {
     position: relative;
-    padding-bottom: 75%;
+    padding-bottom: 50%;
     height: 0;
     overflow: hidden;
+    border: 1px solid black;
+    width: 50%;
+    float: right;
+    margin-top: 8%;
+    margin-bottom: 5%;
   }
 
   .map-container iframe {
@@ -875,6 +907,8 @@ footer {
     left: 0;
     width: 100%;
     height: 100%;
+    float: left;
+
   }/*Map doesn't work on tablet or desktop*/
 
   .mission {
@@ -1188,6 +1222,16 @@ footer {
 
 /***ABOUT PAGE****/
 
+  .contact {
+    margin-top: 10%;
+    width: 30%;
+  }
+
+  .map-container {
+    margin-top: 12%;
+    width: 60%;
+  }
+
   .mission {
     width: 100%;
     margin-left: 0;
@@ -1212,11 +1256,17 @@ footer {
 
   .team {
     padding-left: 2%;
+    padding-right: 2%;
+    margin-right: 20%;
+
   }
 
-  .team-member{
+  .team-member {
     font-weight: normal;
     width: 100%;
+    clear: both;
+    height: auto;
+    margin-bottom: 20%;
   }
 
   .team-img {
@@ -1228,27 +1278,35 @@ footer {
     float: left;
     margin-right: 20px;
     border: 1px solid #ccc;
+    clear: both;
   }
 
   .team-name {
     font-size: 1.3em;
     margin-top: 0;
-    padding-left: 30%;
+    padding-left: 25%;
     font-weight: 900;
-    border: 1px solid black;
+    margin-bottom: 5%;
   }
 
   .team-title {
-    padding-left: 30%;
-    border: 1px solid black;
+    padding-left: 25%;
+    margin-bottom: 0%;
+    margin-top: -5%;
   }
 
   .team-description {
-    display: inline-block;
-    width: 60%;
+    padding-left: 25%;
+    display: inline;
     clear: both;
-    border: 1px solid black;
-    padding-left: 30%;
+    margin-top: -12%;
+    float: left;
+    width: 80%;
+    overflow: wrap;
+  }
+
+  .team:last-child {
+    padding-bottom: 15%;
   }
 
 
